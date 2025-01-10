@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Page Title</title>
+    <style>
+        body{
+            background-color: rgb(198, 255, 255);
+        }
+        h1{color: red;}
+        form {
+            margin: 0 auto;
+           
+        }
+        ol li{ 
+            font-weight: bold;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+        button{
+            background-color: transparent;
+            border: none;
+        }
+        button:hover{
+            background-color: lightgrey;
+        }
+    </style>
+</head>
+<body>
+<h1>Online Classified Search Form</h1>
+<hr/>
+<form>
+<ol>
+    <li><label for="classified">Search for a classified in the following sections:</label>
+    </li>
+    <table>
+        <tr>
+            <td><input type="radio" name="classified" value="employment"> Employment</td>
+            <td><input type="radio" name="classified" value="personal"> Personal</td>
+        </tr>
+        <tr>
+            <td><input type="radio" name="classified" value="sale"> For Sale</td>
+            <td><input type="radio" name="classified" value="miscellaneous"> Miscellaneous</td>
+        </tr>
+        <tr>
+            <td><input type="radio" name="classified" value="housing"> Housing</td>
+            <td><input type="radio" name="classified" value="all"> All of the above</td>
+        </tr>
+    </table>
+    <li><label for="publications">Search the following publications:</label></li>
+
+    <table>
+        <tr>
+            <td><input type="checkbox" name="publications" value="midwest_times"> Midwest Times</td>
+            <td><input type="checkbox" name="publications" value="modern_news"> Modern News</td>
+            <td><input type="checkbox" name="publications" value="employment_today"> Employment Today</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" name="publications" value="great_lakes_classifieds" checked> Great Lakes Classifieds</td>
+            <td><input type="checkbox" name="publications" value="middleton_daily"> Middleton Daily</td>
+            <td><input type="checkbox" name="publications" value="cashtown_daily_news"> Cashtown Daily News</td>
+        </tr>
+    </table>
+    <li><label for="from">From</label> <input id="from" type="text" name="datefrom" placeholder="mm/dd/yy" value="" /> 
+        <label for="to"> to</label> <input id="to" type="text" name="dateto" placeholder="mm/dd/yy" value="" /></li>
+    
+    <li><label for="keywords">Enter a few keywords to describe the classified:</label></li>
+        <input id="keywords" type="text" name="keywords" value="" style="width: 80%;"/>
+
+    <li><label>Click one of the options below:</li>
+    <button type="normal">
+        <img src="hinh/Search.gif" alt="Search" style="width: 70px; height: 50px;" />
+    </button>
+    <button type="button" onclick="window.location.href='https://help.shopee.vn/portal/4'">
+        
+        <img src="hinh/Help.gif" alt="Help" style="width: 70px; height: 50px;" />
+    </button>
+    <button type="reset">
+        <img src="hinh/Cancel.gif" alt="Cancel" style="width: 70px; height: 50px;" />
+    </button>
+</ol>
+</form>
+</body>
+</html>
+
+

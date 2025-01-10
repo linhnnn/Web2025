@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Page Title</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #add8e6;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 60%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: lightblue;
+        
+        }
+        form {
+            margin: 0 auto;
+            width: 80%;
+        }
+        label {
+            display: inline-block;
+            width: 100px;
+           
+            margin-bottom: 10px;
+        }
+        input[type="text"], input[type="number"], select, textarea {
+            padding: 5px;
+            margin-bottom: 10px;
+            margin-right: 10px;
+        }
+        .form-section {
+            margin-bottom: 20px;
+            border-bottom: 1px solid grey;
+            padding-bottom: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 5px;
+            background-color: #00cccc;
+            border: 1px solid #000;
+            color: #000;
+            cursor: pointer;
+        }
+        .button-container {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <img src="hinh/Jackson.gif" alt="Jackson" width="200" height="100">
+    </center>
+<h1 style="text-align: center;">Registration Form</h1>
+<p style="text-align: center;">Register your Jackson Electronics product here</p>
+<form>    
+    <div class="form-section">
+    <label for="firstname">First name:</label>
+    <input id="firstname" type="text" name="txtName" value="" />
+
+    <label for="lastname">Last name:</label>
+    <input id="lastname" type="text" name="txtLastName" value="" /><br/>
+
+    <label for="address1">Address #1:</label>
+    <input id="address1" type="text" name="txtAddress1" value="" /><br/>
+
+    <label for="address2">Address #2:</label>
+    <input id="address2" type="text" name="txtAddress2" value="" /><br/>
+
+    <label for="city">City:</label>
+    <input id="city" type="text" name="txtCity" value="" />
+    
+    <label for="city">State:</label>
+    <input id="city" type="text" name="txtState" value="" />
+    <label for="city">Zip:</label>
+    <input id="city" type="text" name="txtZip" value="" /><br/>
+
+    <label for="city">Country:</label>
+    <input id="city" type="text" name="txtCountry" value="United States" />
+    </div>
+
+    <div class="form-section">
+    <label for="product">Product:</label>
+    <select name="product" id="product">
+        <option value="ScanMaster">ScanMaster</option>
+        <option value="PowerMax">PowerMax</option>
+        <option value="EcoDrive">EcoDrive</option>
+        <option value="UltraSound">UltraSound</option>
+    </select>
+    <br/>
+    <label for="date-purchased" style="width: 120px;">Date Purchased:</label>
+    <input id="date-purchased" type="text" name="txtDate" value="" /> <br/>
+    <label for="serial">Serial #:</label>
+    <input id="serial" type="text" name="txtSerial" value="" /> <br/>
+
+    <label for="used">Used for:</label>
+    <table>
+        <tr>
+            <td><input type="radio" name="used-for" value="home"> Home</td>
+            <td><input type="radio" name="used-for" value="business"> Business</td>
+            <td><input type="radio" name="used-for" value="government"> Government</td>
+        </tr>
+        <tr>
+            <td><input type="radio" name="used-for" value="education"> Educational Institution</td>
+            <td><input type="radio" name="used-for" value="other"> Other</td>
+            <td></td>
+        </tr>
+    </table>
+    </div>
+
+    <div class="form-section">
+    <label for="comment">Comments?:</label>
+    <textarea id="comments" name="comments" rows="5" style="width: 100%;"></textarea>
+    </div>
+
+    <div class="button-container">
+        <button type="submit" onclick="alert('Register successfully')">Click to register</button>
+        <button type="reset">Click to cancel</button>
+    
+    </div>
+</form> 
+
+</body>
+</html>
