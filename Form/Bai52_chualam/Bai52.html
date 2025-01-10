@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Page Title</title>
+
+</head>
+<body>
+<form>
+    <p><label for="name">Họ và tên: </label> 
+        <input id="name" type="text" name="name"value="" style="width: 50%;"/></p>
+    <p><label for="email">Email: </label> 
+        <input id="email" type="text" name="email"value="" style="width: 50%;"/></p>
+    <p>
+        <label>Giới tính:</label>
+            <input type="radio" name="sex" value="male"> Nam
+            <input type="radio" name="sex" value="female"> Nữ
+    </p>
+    <p>
+        <input type="checkbox" name="havejob" value="havejob" /> Tôi đã có nghề nghiệp ổn định
+    </p>
+    <p>
+    <label for="comefrom">Đến từ:</label>
+    <select name="comefrom" id="comefrom">
+        <option value="Bac">Miền Bắc</option>
+        <option value="Trung">Miền Trung</option>
+        <option value="Nam">Miền Nam</option>
+        <option value="Tay">Miền Tây</option>
+    </select>
+    </p>
+    <p>
+        <label for="comment">Nội dung cần gửi đến chúng tôi</label> <br/>
+        <textarea id="comment" name="comment" rows="5" cols="40"></textarea>
+    </p>
+    <div>
+        <button type="submit">Gởi thông điệp</button>
+        <button type="reset">Nhập lại tất cả</button>
+    </div>
+</form>
+</body>
+</html>

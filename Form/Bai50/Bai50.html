@@ -7,6 +7,9 @@
         body{
             background-color: lightblue;
         }
+        ol{
+           padding-left: 15px;
+        }
         ol li{
            
             padding-top: 15px;
@@ -41,7 +44,7 @@
     <textarea id="comments" name="comments" rows="5" style="width: 60%;"></textarea>
     
     <li><label for="travel">Itemize your travel expenses</label></li>
-    <table border="1"></table>
+    <table border="1">
         <thead>
             <tr>
                 <th>Date</th>
@@ -75,7 +78,7 @@
                         <option value="other">Other</option>
                     </select>
                 </td>
-                <td><inputb type="number" placeholder="Amount"></td>r
+                <td><input type="number" placeholder="Amount"></td>
             </tr>
             <tr>
                 <td><input type="text" placeholder="mm/dd/yy"></td>
@@ -105,7 +108,19 @@
             </tr>
         </tbody>
     </table>
+    <li><label>Have you submitted your receipts? </label>
+        <div>
+            <input type="radio" name="submitted" value="submitted"> Yes
+            <input type="radio" name="submitted" value="nonsubmitted"> No
+        </div>
+        
+    </li>
 </ol>
+<div>
+    <button type="submit" onclick="alert('Submit successfully')">Submit travel expenses</button>
+    <button type="reset">Reset</button>
+</div>
+<p>Questions? Contact Debbie Larson in Accounting (ext. 2150).</p>
 </form>
 </body>
 </html>
